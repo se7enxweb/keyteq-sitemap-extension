@@ -26,7 +26,7 @@ class SitemapBuilder {
         $classIdentifier = $node->classIdentifier();
         $nodeId = $node->NodeID;
         $sectionId = $node->object()->attribute('section_id');
-
+#	print $sectionId;
         // HANDLE EXCLUDES
         if (isset($excludes['class_identifiers']) && in_array($classIdentifier, $excludes['class_identifiers']))
             return null;
